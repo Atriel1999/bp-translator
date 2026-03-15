@@ -69,6 +69,14 @@ public class TranslatorService {
 		return (String) content.get(0).get("text");
 	}
 
+	public boolean isJapanese(String text) {
+		return text.chars().anyMatch(c ->
+			Character.UnicodeBlock.of(c) == Character.UnicodeBlock.HIRAGANA ||
+				Character.UnicodeBlock.of(c) == Character.UnicodeBlock.KATAKANA ||
+				Character.UnicodeBlock.of(c) == Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS
+		);
+	}
+
 	public String getSystemPrompt() { return systemPrompt; }
 	public void setSystemPrompt(String prompt) { systemPrompt = prompt; }
 	public String getDefaultPrompt() { return defaultPrompt; }

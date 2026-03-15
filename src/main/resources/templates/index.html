@@ -60,6 +60,18 @@
         .preset-add { background: #1a2a1a; border: 1px dashed #3a6a3a; border-radius: 6px; padding: 7px 6px; font-size: 20px; color: #3a6a3a; cursor: pointer; display: flex; align-items: center; justify-content: center; min-height: 44px; }
         .preset-add:hover { border-color: #4CAF50; color: #4CAF50; background: #1e321e; }
 
+        .preset-section-label { grid-column: 1 / -1; font-size: 10px; color: #666; padding: 4px 2px 2px; letter-spacing: 1px; text-transform: uppercase; border-bottom: 1px solid #2a2a4e; margin-bottom: 2px; }
+        .preset-grid-divider { grid-column: 1 / -1; height: 1px; background: #2a2a4e; margin: 4px 0; }
+        .preset-btn.dragging { opacity: 0.4; border: 1px dashed #e0a800; }
+        .preset-btn.drag-over { border: 1px solid #e0a800; background: #2a2a3e; }
+        .preset-btn.default-preset { border-color: #2a3a2a; }
+        .preset-btn.default-preset .p-label { color: #4CAF50; }
+
+        /* 토스트 */
+        .toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #e0a800; color: #12121e; padding: 8px 20px; border-radius: 20px; font-size: 13px; font-weight: bold; opacity: 0; transition: opacity 0.3s; pointer-events: none; z-index: 999; }
+        .toast.show { opacity: 1; }
+        .toast.hide { opacity: 0; transition: opacity 0.5s; }
+
         /* 모달 공통 */
         .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 100; align-items: center; justify-content: center; }
         .modal-overlay.active { display: flex; }
@@ -229,9 +241,9 @@
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({text})
         });
-        const result = await res.text();
-        resultEl.textContent = result;
-        addHistory(text, result);
+        const data = await res.json();
+        resultEl.textContent = data.result;
+        addHistory(text, data.result, data.jpText);
       } catch(e) {
         resultEl.textContent = '오류가 발생했습니다.';
       }
@@ -255,8 +267,8 @@
     });
 
     // 히스토리
-    function addHistory(original, translated) {
-      history.unshift({original, translated, id: Date.now()});
+    function addHistory(original, translated, jpText) {
+      history.unshift({original, translated, jpText, id: Date.now()});
       if (history.length > 20) history.pop();
       localStorage.setItem('bp_history_' + currentUser, JSON.stringify(history));
       renderHistory();
@@ -269,7 +281,7 @@
           <div class="h-original">${escHtml(h.original)}</div>
           <div class="h-translated">${escHtml(h.translated)}</div>
           <div class="h-btn-group">
-            <button class="h-preset-btn" onclick="event.stopPropagation();openPresetFromHistory('${escHtml(h.translated)}')">+</button>
+            <button class="h-preset-btn" onclick="event.stopPropagation();openPresetFromHistory('${escHtml(h.jpText || h.translated)}')">+</button>
             <button class="h-delete-btn" onclick="event.stopPropagation();deleteHistory(${i})">✕</button>
           </div>
         </div>
@@ -307,8 +319,32 @@
 
     function renderPresets(presets) {
       const grid = document.getElementById('presetGrid');
-      grid.innerHTML = presets.map(p => `
-        <div class="preset-btn" onclick="copyPreset('${escHtml(p.text)}')">
+      const defaultPresets = presets.filter(p => p.id.startsWith('default-'));
+      const customPresets = presets.filter(p => !p.id.startsWith('default-'));
+
+      const defaultHtml = `
+        <div class="preset-section-label">기본</div>
+        ${defaultPresets.map(p => `
+          <div class="preset-btn default-preset" onclick="copyPreset('${escHtml(p.text)}')">
+            <div class="p-label">${escHtml(p.label)}</div>
+            <div class="p-text">${escHtml(p.text)}</div>
+          </div>
+        `).join('')}
+        <div class="preset-grid-divider"></div>
+        <div class="preset-section-label">커스텀</div>
+      `;
+
+      const customHtml = customPresets.map(p => `
+        <div class="preset-btn"
+             draggable="false"
+             data-id="${p.id}"
+             onmousedown="startPressTimer('${escHtml(p.text)}')"
+             onmouseup="handlePresetClick(event, '${escHtml(p.text)}')"
+             onmouseleave="clearPressTimer()"
+             ondragstart="onDragStart(event, '${p.id}')"
+             ondragover="onDragOver(event)"
+             ondrop="onDrop(event, '${p.id}')"
+             ondragleave="onDragLeave(event)">
           <div class="p-label">${escHtml(p.label)}</div>
           <div class="p-text">${escHtml(p.text)}</div>
           <div class="p-actions">
@@ -317,6 +353,15 @@
           </div>
         </div>
       `).join('') + `<div class="preset-add" onclick="openPresetModal()">+</div>`;
+
+      grid.innerHTML = defaultHtml + customHtml;
+    }
+
+    function handlePresetClick(event, text) {
+      clearPressTimer();
+      if (!isDragging) {
+        copyPreset(text);
+      }
     }
 
     function copyPreset(text) {
@@ -375,6 +420,98 @@
       await loadPresets();
     }
 
+    // 토스트
+    function showToast() {
+      const t = document.getElementById('toast');
+      t.classList.remove('hide');
+      t.classList.add('show');
+      setTimeout(() => {
+        t.classList.remove('show');
+        t.classList.add('hide');
+      }, 1000);
+    }
+
+    // 클립보드 복사
+    function copyPreset(text) {
+      navigator.clipboard.writeText(text);
+      showToast();
+    }
+
+    // 길게 누르기
+    let pressTimer = null;
+    let isDragging = false;
+
+    function startPressTimer(text) {
+      isDragging = false;
+      pressTimer = setTimeout(() => {
+        isDragging = true;
+        // 드래그 모드 진입 - draggable 활성화
+        document.querySelectorAll('.preset-btn[data-id]').forEach(el => {
+          el.setAttribute('draggable', 'true');
+        });
+      }, 500);
+    }
+
+    function clearPressTimer() {
+      clearTimeout(pressTimer);
+      if (!isDragging) {
+        // 짧게 눌렀을 때는 드래그 비활성
+        document.querySelectorAll('.preset-btn[data-id]').forEach(el => {
+          el.setAttribute('draggable', 'false');
+        });
+      }
+    }
+
+    // 드래그 앤 드롭
+    let dragSrcId = null;
+
+    function onDragStart(event, id) {
+      if (!isDragging) { event.preventDefault(); return; }
+      dragSrcId = id;
+      event.target.classList.add('dragging');
+      event.dataTransfer.effectAllowed = 'move';
+    }
+
+    function onDragOver(event) {
+      event.preventDefault();
+      event.target.closest('.preset-btn[data-id]')?.classList.add('drag-over');
+      event.dataTransfer.dropEffect = 'move';
+    }
+
+    function onDragLeave(event) {
+      event.target.closest('.preset-btn[data-id]')?.classList.remove('drag-over');
+    }
+
+    async function onDrop(event, targetId) {
+      event.preventDefault();
+      if (dragSrcId === targetId) return;
+
+      document.querySelectorAll('.preset-btn[data-id]').forEach(el => {
+        el.classList.remove('dragging', 'drag-over');
+        el.setAttribute('draggable', 'false');
+      });
+      isDragging = false;
+
+      // 현재 커스텀 프리셋 순서 재정렬
+      const res = await fetch('/api/preset/' + currentUser);
+      const presets = await res.json();
+      const customPresets = presets.filter(p => !p.id.startsWith('default-'));
+      const ids = customPresets.map(p => p.id);
+
+      const srcIdx = ids.indexOf(dragSrcId);
+      const tgtIdx = ids.indexOf(targetId);
+      ids.splice(srcIdx, 1);
+      ids.splice(tgtIdx, 0, dragSrcId);
+
+      await fetch('/api/preset/' + currentUser + '/reorder', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(ids)
+      });
+
+      await loadPresets();
+    }
+
     function closePresetModal() {
       document.getElementById('modalPreset').classList.remove('active');
     }
@@ -419,5 +556,6 @@
 
     init();
 </script>
+<div class="toast" id="toast">클립보드에 복사되었습니다</div>
 </body>
 </html>

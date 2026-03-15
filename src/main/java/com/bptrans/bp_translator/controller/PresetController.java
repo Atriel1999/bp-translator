@@ -66,4 +66,14 @@ public class PresetController {
 		list.removeIf(p -> p.get("id").equals(id));
 		save(user, list);
 	}
+
+	@PostMapping("/{user}/reorder")
+	public void reorder(@PathVariable String user, @RequestBody List<String> ids) {
+		List<Map<String, String>> list = load(user);
+		List<Map<String, String>> reordered = new ArrayList<>();
+		for (String id : ids) {
+			list.stream().filter(p -> p.get("id").equals(id)).findFirst().ifPresent(reordered::add);
+		}
+		save(user, reordered);
+	}
 }

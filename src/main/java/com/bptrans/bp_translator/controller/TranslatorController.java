@@ -1,5 +1,7 @@
 package com.bptrans.bp_translator.controller;
 
+import java.util.Map;
+
 import com.bptrans.bp_translator.service.TranslatorService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,8 +23,14 @@ public class TranslatorController {
 
 	@PostMapping("/translate")
 	@ResponseBody
-	public String translate(@RequestBody java.util.Map<String, String> body) {
-		return translatorService.translate(body.get("text"));
+	public Map<String, String> translate(@RequestBody Map<String, String> body) {
+		String input = body.get("text");
+		String result = translatorService.translate(input);
+		boolean inputIsJp = translatorService.isJapanese(input);
+		return Map.of(
+			"result", result,
+			"jpText", inputIsJp ? input : result
+		);
 	}
 
 	@PostMapping("/prompt")

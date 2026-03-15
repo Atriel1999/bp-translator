@@ -10,11 +10,15 @@ import java.util.*;
 @RequestMapping("/api/preset")
 public class PresetController {
 
-	private static final String FILE_PATH = "presets.json";
+	private static final List<String> USERS = List.of("Atriel", "kuku");
 	private final ObjectMapper mapper = new ObjectMapper();
 
-	private List<Map<String, String>> load() {
-		File f = new File(FILE_PATH);
+	private String filePath(String user) {
+		return "presets_" + user.toLowerCase() + ".json";
+	}
+
+	private List<Map<String, String>> load(String user) {
+		File f = new File(filePath(user));
 		if (!f.exists()) return new ArrayList<>();
 		try {
 			return mapper.readValue(f, new TypeReference<>() {});
@@ -23,29 +27,29 @@ public class PresetController {
 		}
 	}
 
-	private void save(List<Map<String, String>> list) {
+	private void save(String user, List<Map<String, String>> list) {
 		try {
-			mapper.writeValue(new File(FILE_PATH), list);
+			mapper.writeValue(new File(filePath(user)), list);
 		} catch (Exception ignored) {}
 	}
 
-	@GetMapping
-	public List<Map<String, String>> getAll() {
-		return load();
+	@GetMapping("/{user}")
+	public List<Map<String, String>> getAll(@PathVariable String user) {
+		return load(user);
 	}
 
-	@PostMapping
-	public Map<String, String> add(@RequestBody Map<String, String> preset) {
-		List<Map<String, String>> list = load();
+	@PostMapping("/{user}")
+	public Map<String, String> add(@PathVariable String user, @RequestBody Map<String, String> preset) {
+		List<Map<String, String>> list = load(user);
 		preset.put("id", UUID.randomUUID().toString());
 		list.add(preset);
-		save(list);
+		save(user, list);
 		return preset;
 	}
 
-	@PutMapping("/{id}")
-	public void update(@PathVariable String id, @RequestBody Map<String, String> preset) {
-		List<Map<String, String>> list = load();
+	@PutMapping("/{user}/{id}")
+	public void update(@PathVariable String user, @PathVariable String id, @RequestBody Map<String, String> preset) {
+		List<Map<String, String>> list = load(user);
 		for (Map<String, String> p : list) {
 			if (p.get("id").equals(id)) {
 				p.put("label", preset.get("label"));
@@ -53,13 +57,13 @@ public class PresetController {
 				break;
 			}
 		}
-		save(list);
+		save(user, list);
 	}
 
-	@DeleteMapping("/{id}")
-	public void delete(@PathVariable String id) {
-		List<Map<String, String>> list = load();
+	@DeleteMapping("/{user}/{id}")
+	public void delete(@PathVariable String user, @PathVariable String id) {
+		List<Map<String, String>> list = load(user);
 		list.removeIf(p -> p.get("id").equals(id));
-		save(list);
+		save(user, list);
 	}
 }

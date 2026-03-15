@@ -13,6 +13,11 @@
         .btn-setting { background: #2a2a4e; border: 1px solid #3a3a6e; color: #aaa; padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 13px; }
         .btn-setting:hover { background: #3a3a6e; color: #fff; }
 
+        .user-switch { display: flex; gap: 6px; }
+        .user-btn { background: #2a2a4e; border: 1px solid #3a3a6e; color: #aaa; padding: 6px 16px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: bold; }
+        .user-btn:hover { background: #3a3a6e; color: #fff; }
+        .user-btn.active { background: #e0a800; color: #12121e; border-color: #e0a800; }
+
         /* 메인 레이아웃 */
         .main { display: flex; flex: 1; overflow: hidden; }
 
@@ -93,6 +98,10 @@
 
 <div class="header">
     <h1>⚔️ BP 번역기</h1>
+    <div class="user-switch">
+        <button class="user-btn active" id="btn-Atriel" onclick="switchUser('Atriel')">Atriel</button>
+        <button class="user-btn" id="btn-kuku" onclick="switchUser('kuku')">kuku</button>
+    </div>
     <button class="btn-setting" onclick="openSetting()">⚙️ 설정</button>
 </div>
 
@@ -181,8 +190,23 @@
 
 <script>
     let editingPresetId = null;
-    let history = JSON.parse(localStorage.getItem('bp_history') || '[]');
+    let currentUser = 'Atriel';
+    let histories = {
+      Atriel: JSON.parse(localStorage.getItem('bp_history_Atriel') || '[]'),
+      kuku: JSON.parse(localStorage.getItem('bp_history_kuku') || '[]')
+    };
+    let history = histories[currentUser];
     let defaultPrompt = '';
+
+    function switchUser(user) {
+      currentUser = user;
+      history = histories[user];
+      document.querySelectorAll('.user-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('btn-' + user).classList.add('active');
+      renderHistory();
+      loadPresets();
+      clearAll();
+    }
 
     // 초기화
     async function init() {
@@ -234,7 +258,7 @@
     function addHistory(original, translated) {
       history.unshift({original, translated, id: Date.now()});
       if (history.length > 20) history.pop();
-      localStorage.setItem('bp_history', JSON.stringify(history));
+      localStorage.setItem('bp_history_' + currentUser, JSON.stringify(history));
       renderHistory();
     }
 
@@ -253,8 +277,9 @@
     }
 
     function clearHistory() {
-      history = [];
-      localStorage.setItem('bp_history', '[]');
+      histories[currentUser] = [];
+      history = histories[currentUser];
+      localStorage.setItem('bp_history_' + currentUser, '[]');
       renderHistory();
     }
 
@@ -269,13 +294,13 @@
 
     function deleteHistory(index) {
       history.splice(index, 1);
-      localStorage.setItem('bp_history', JSON.stringify(history));
+      localStorage.setItem('bp_history_' + currentUser, JSON.stringify(history));
       renderHistory();
     }
 
     // 프리셋
     async function loadPresets() {
-      const res = await fetch('/api/preset');
+      const res = await fetch('/api/preset/' + currentUser);
       const presets = await res.json();
       renderPresets(presets);
     }
@@ -329,13 +354,13 @@
       const text = document.getElementById('presetTextInput').value.trim();
       if (!label || !text) return;
       if (editingPresetId) {
-        await fetch(`/api/preset/${editingPresetId}`, {
+        await fetch(`/api/preset/${currentUser}/${editingPresetId}`, {
           method: 'PUT',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({label, text})
         });
       } else {
-        await fetch('/api/preset', {
+        await fetch('/api/preset/' + currentUser, {
           method: 'POST',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({label, text})
@@ -346,7 +371,7 @@
     }
 
     async function deletePreset(id) {
-      await fetch(`/api/preset/${id}`, {method: 'DELETE'});
+      await fetch(`/api/preset/${currentUser}/${id}`, {method: 'DELETE'});
       await loadPresets();
     }
 

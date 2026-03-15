@@ -14,7 +14,7 @@ public class PresetController {
 	private final ObjectMapper mapper = new ObjectMapper();
 
 	private String filePath(String user) {
-		return "presets_" + user.toLowerCase() + ".json";
+		return "src/main/resources/config/presets_" + user.toLowerCase() + ".json";
 	}
 
 	private List<Map<String, String>> load(String user) {

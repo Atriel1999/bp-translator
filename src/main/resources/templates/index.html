@@ -77,6 +77,10 @@
         .setting-menu-item span { font-size: 13px; }
         .setting-menu-item .arrow { color: #666; }
 
+        .history-item { position: relative; padding-right: 24px; }
+        .h-preset-btn { position: absolute; top: 50%; right: 4px; transform: translateY(-50%); background: #2a2a4e; border: 1px solid #3a3a6e; color: #e0a800; width: 18px; height: 18px; border-radius: 4px; cursor: pointer; font-size: 13px; display: flex; align-items: center; justify-content: center; line-height: 1; }
+        .h-preset-btn:hover { background: #e0a800; color: #12121e; }
+
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-track { background: #12121e; }
         ::-webkit-scrollbar-thumb { background: #3a3a6e; border-radius: 2px; }
@@ -234,9 +238,10 @@
     function renderHistory() {
       const el = document.getElementById('historyList');
       el.innerHTML = history.map(h => `
-        <div class="history-item" onclick="setInput('${escHtml(h.original)}')">
-          <div class="h-original">${escHtml(h.original)}</div>
-          <div class="h-translated">${escHtml(h.translated)}</div>
+        <div class="history-item">
+          <div class="h-original" onclick="setInput('${escHtml(h.original)}')">${escHtml(h.original)}</div>
+          <div class="h-translated" onclick="setInput('${escHtml(h.translated)}')">${escHtml(h.translated)}</div>
+          <button class="h-preset-btn" onclick="openPresetFromHistory('${escHtml(h.translated)}')">+</button>
         </div>
       `).join('');
     }
@@ -283,6 +288,14 @@
       document.getElementById('presetModalTitle').textContent = '프리셋 추가';
       document.getElementById('presetLabel').value = '';
       document.getElementById('presetTextInput').value = '';
+      document.getElementById('modalPreset').classList.add('active');
+    }
+
+    function openPresetFromHistory(translatedText) {
+      editingPresetId = null;
+      document.getElementById('presetModalTitle').textContent = '프리셋 추가';
+      document.getElementById('presetLabel').value = '';
+      document.getElementById('presetTextInput').value = translatedText;
       document.getElementById('modalPreset').classList.add('active');
     }
 

@@ -70,10 +70,14 @@ public class PresetController {
 	@PostMapping("/{user}/reorder")
 	public void reorder(@PathVariable String user, @RequestBody List<String> ids) {
 		List<Map<String, String>> list = load(user);
+		List<Map<String, String>> defaultPresets = list.stream()
+			.filter(p -> p.get("id").startsWith("default-"))
+			.collect(java.util.stream.Collectors.toList());
 		List<Map<String, String>> reordered = new ArrayList<>();
 		for (String id : ids) {
 			list.stream().filter(p -> p.get("id").equals(id)).findFirst().ifPresent(reordered::add);
 		}
-		save(user, reordered);
+		defaultPresets.addAll(reordered);
+		save(user, defaultPresets);
 	}
 }

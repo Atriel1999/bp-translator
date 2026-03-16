@@ -48,8 +48,12 @@
 
         /* 프리셋 영역 35% */
         .panel-preset { width: 35%; display: flex; flex-direction: column; overflow: hidden; }
-        .preset-grid { flex: 1; overflow-y: auto; padding: 8px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; align-content: start; }
-        .preset-btn { background: #1e1e32; border: 1px solid #2a2a4e; border-radius: 6px; padding: 7px 6px; font-size: 11px; color: #e0e0e0; cursor: pointer; text-align: center; position: relative; line-height: 1.3; min-height: 44px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; max-height: 56px; overflow: hidden; }
+        .preset-grid { flex: 1; overflow-y: auto; padding: 8px; display: flex; flex-wrap: wrap; gap: 5px; align-content: start; position: relative;}
+        .preset-grid.is-dragging { user-select: none; }
+        .preset-grid.is-dragging .preset-btn { pointer-events: none; }
+        .preset-grid.is-dragging .preset-btn.dragging { pointer-events: none; }
+        .preset-btn { background: #1e1e32; border: 1px solid #2a2a4e; border-radius: 6px; padding: 7px 6px; font-size: 11px; color: #e0e0e0; cursor: pointer; text-align: center; position: relative; line-height: 1.3; min-height: 44px; max-height: 56px; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; width: calc(33.33% - 4px); }
+        .drop-indicator { position: absolute; width: 2px; height: 44px; background: #e0a800; box-shadow: 0 0 6px #e0a800; pointer-events: none; border-radius: 2px; z-index: 10; }
         .preset-btn:hover { border-color: #e0a800; background: #252540; }
         .preset-btn .p-label { font-weight: bold; color: #e0a800; font-size: 10px; }
         .preset-btn .p-text { color: #ccc; font-size: 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; text-align: center; }
@@ -60,10 +64,10 @@
         .preset-add { background: #1a2a1a; border: 1px dashed #3a6a3a; border-radius: 6px; padding: 7px 6px; font-size: 20px; color: #3a6a3a; cursor: pointer; display: flex; align-items: center; justify-content: center; min-height: 44px; }
         .preset-add:hover { border-color: #4CAF50; color: #4CAF50; background: #1e321e; }
 
-        .preset-section-label { grid-column: 1 / -1; font-size: 10px; color: #666; padding: 4px 2px 2px; letter-spacing: 1px; text-transform: uppercase; border-bottom: 1px solid #2a2a4e; margin-bottom: 2px; }
-        .preset-grid-divider { grid-column: 1 / -1; height: 1px; background: #2a2a4e; margin: 4px 0; }
-        .preset-btn.dragging { opacity: 0.4; border: 1px dashed #e0a800; }
-        .preset-btn.drag-over { border: 1px solid #e0a800; background: #2a2a3e; }
+        .preset-section-label { grid-column: 1 / -1; font-size: 10px; color: #666; padding: 4px 2px 2px; letter-spacing: 1px; text-transform: uppercase; border-bottom: 1px solid #2a2a4e; margin-bottom: 2px; width: 100%;}
+        .preset-grid-divider { grid-column: 1 / -1; height: 1px; background: #2a2a4e; margin: 4px 0; width: 100%;}
+        .preset-btn.dragging { opacity: 0.4; border: 1px dashed #e0a800; pointer-events: none; }
+        .preset-btn.drag-over { border: 1px solid #2a2a4e; background: #1e1e32; }
         .preset-btn.default-preset { border-color: #2a3a2a; }
         .preset-btn.default-preset .p-label { color: #4CAF50; }
 
@@ -335,26 +339,25 @@
       `;
 
       const customHtml = customPresets.map(p => `
-        <div class="preset-btn"
-             draggable="false"
-             data-id="${p.id}"
-             onmousedown="startPressTimer('${escHtml(p.text)}')"
-             onmouseup="handlePresetClick(event, '${escHtml(p.text)}')"
-             onmouseleave="clearPressTimer()"
-             ondragstart="onDragStart(event, '${p.id}')"
-             ondragover="onDragOver(event)"
-             ondrop="onDrop(event, '${p.id}')"
-             ondragleave="onDragLeave(event)">
-          <div class="p-label">${escHtml(p.label)}</div>
-          <div class="p-text">${escHtml(p.text)}</div>
-          <div class="p-actions">
-            <button onmousedown="event.stopPropagation()" onclick="event.stopPropagation();editPreset('${p.id}','${escHtml(p.label)}','${escHtml(p.text)}')">✏</button>
-            <button onmousedown="event.stopPropagation()" onclick="event.stopPropagation();deletePreset('${p.id}')">✕</button>
+          <div class="preset-btn"
+               data-id="${p.id}"
+               data-text="${escHtml(p.text)}">
+            <div class="p-label">${escHtml(p.label)}</div>
+            <div class="p-text">${escHtml(p.text)}</div>
+            <div class="p-actions">
+              <button onmousedown="event.stopPropagation()" onclick="event.stopPropagation();editPreset('${p.id}','${escHtml(p.label)}','${escHtml(p.text)}')">✏</button>
+              <button onmousedown="event.stopPropagation()" onclick="event.stopPropagation();deletePreset('${p.id}')">✕</button>
+            </div>
           </div>
-        </div>
-      `).join('') + `<div class="preset-add" onclick="openPresetModal()">+</div>`;
+        `).join('') + `<div class="preset-add" onclick="openPresetModal()">+</div>`;
 
       grid.innerHTML = defaultHtml + customHtml;
+
+      grid.querySelectorAll('.preset-btn[data-id]').forEach(btn => {
+          btn.addEventListener('mousedown', (e) => {
+            onPresetMouseDown(e, btn.dataset.id, btn.dataset.text);
+          });
+        });
     }
 
     function handlePresetClick(event, text) {
@@ -441,75 +444,160 @@
     let pressTimer = null;
     let isDragging = false;
 
-    function startPressTimer(text) {
-      isDragging = false;
-      pressTimer = setTimeout(() => {
-        isDragging = true;
-        // 드래그 모드 진입 - draggable 활성화
-        document.querySelectorAll('.preset-btn[data-id]').forEach(el => {
-          el.setAttribute('draggable', 'true');
-        });
-      }, 500);
+    // 드래그 앤 드롭 (mousemove 기반)
+    let dragState = null; // { id, el, startX, startY, clone }
+    let dropTargetId = null;
+    let dropPosition = null; // 'before' | 'after'
+    const DRAG_THRESHOLD = 8;
+
+    function getCustomBtns() {
+      return [...document.querySelectorAll('.preset-btn[data-id]')];
     }
 
-    function clearPressTimer() {
-      clearTimeout(pressTimer);
-      if (!isDragging) {
-        // 짧게 눌렀을 때는 드래그 비활성
-        document.querySelectorAll('.preset-btn[data-id]').forEach(el => {
-          el.setAttribute('draggable', 'false');
-        });
-      }
+    function removeDragClone() {
+      document.querySelectorAll('.drag-clone').forEach(el => el.remove());
+      document.querySelectorAll('.drop-indicator').forEach(el => el.remove());
+      getCustomBtns().forEach(el => el.classList.remove('dragging'));
+      document.getElementById('presetGrid').classList.remove('is-dragging');
     }
 
-    // 드래그 앤 드롭
-    let dragSrcId = null;
+    function onPresetMouseDown(e, id, text) {
+      if (e.target.closest('.p-actions')) return;
+      dragState = { id, text, el: e.currentTarget, startX: e.clientX, startY: e.clientY, dragging: false };
 
-    function onDragStart(event, id) {
-      if (!isDragging) { event.preventDefault(); return; }
-      dragSrcId = id;
-      event.target.classList.add('dragging');
-      event.dataTransfer.effectAllowed = 'move';
+      const onMouseMove = (e) => {
+        if (!dragState) return;
+        const dx = e.clientX - dragState.startX;
+        const dy = e.clientY - dragState.startY;
+
+        if (!dragState.dragging && Math.sqrt(dx*dx + dy*dy) > DRAG_THRESHOLD) {
+          dragState.dragging = true;
+          document.getElementById('presetGrid').classList.add('is-dragging');
+          dragState.el.classList.add('dragging');
+        }
+
+        if (!dragState.dragging) return;
+
+        // 드롭 위치 계산
+        const btns = getCustomBtns().filter(b => b.dataset.id !== dragState.id);
+        let newTarget = null, newPos = null;
+
+        for (const btn of btns) {
+          const rect = btn.getBoundingClientRect();
+          // 같은 행인지 확인 (Y 범위 안에 있는지)
+          if (e.clientY >= rect.top && e.clientY <= rect.bottom) {
+            const midX = rect.left + rect.width / 2;
+            if (e.clientX < midX) {
+              newTarget = btn.dataset.id;
+              newPos = 'before';
+              break;
+            } else {
+              newTarget = btn.dataset.id;
+              newPos = 'after';
+            }
+          }
+        }
+
+        // 같은 행에 없으면 가장 가까운 행으로
+            if (!newTarget && btns.length > 0) {
+          let closest = null, closestDist = Infinity;
+          for (const btn of btns) {
+            const rect = btn.getBoundingClientRect();
+            const cy = rect.top + rect.height / 2;
+            const dist = Math.abs(e.clientY - cy);
+            if (dist < closestDist) { closestDist = dist; closest = btn; }
+          }
+          if (closest) {
+            const rect = closest.getBoundingClientRect();
+            newTarget = closest.dataset.id;
+            newPos = e.clientX < rect.left + rect.width / 2 ? 'before' : 'after';
+          }
+        }
+
+        if (newTarget !== dropTargetId || newPos !== dropPosition) {
+          dropTargetId = newTarget;
+          dropPosition = newPos;
+          renderDropIndicator();
+        }
+      };
+
+      const onMouseUp = async (e) => {
+        document.removeEventListener('mousemove', onMouseMove);
+        document.removeEventListener('mouseup', onMouseUp);
+
+        if (!dragState) return;
+        const wasDragging = dragState.dragging;
+        const id = dragState.id;
+        const text = dragState.text;
+        dragState = null;
+
+        removeDragClone();
+
+        if (!wasDragging) {
+          // 클릭 → 복사
+          if (!e.target.closest('.p-actions')) copyPreset(text);
+          dropTargetId = null; dropPosition = null;
+          return;
+        }
+
+        // 드래그 완료 → 순서 저장
+        if (dropTargetId) {
+          const res = await fetch('/api/preset/' + currentUser);
+          const presets = await res.json();
+          const custom = presets.filter(p => !p.id.startsWith('default-'));
+          const ids = custom.map(p => p.id);
+          const srcIdx = ids.indexOf(id);
+          ids.splice(srcIdx, 1);
+          let tgtIdx = ids.indexOf(dropTargetId);
+          if (dropPosition === 'after') tgtIdx += 1;
+          ids.splice(tgtIdx, 0, id);
+
+          await fetch('/api/preset/' + currentUser + '/reorder', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(ids)
+          });
+          await loadPresets();
+        }
+
+        dropTargetId = null;
+        dropPosition = null;
+      };
+
+      document.addEventListener('mousemove', onMouseMove);
+      document.addEventListener('mouseup', onMouseUp);
     }
 
-    function onDragOver(event) {
-      event.preventDefault();
-      event.target.closest('.preset-btn[data-id]')?.classList.add('drag-over');
-      event.dataTransfer.dropEffect = 'move';
+    function renderDropIndicator() {
+      document.querySelectorAll('.drop-indicator').forEach(el => el.remove());
+      if (!dropTargetId) return;
+
+      const grid = document.getElementById('presetGrid');
+      const targetEl = grid.querySelector(`[data-id="${dropTargetId}"]`);
+      if (!targetEl) return;
+
+      const gridRect = grid.getBoundingClientRect();
+      const targetRect = targetEl.getBoundingClientRect();
+
+      const indicator = document.createElement('div');
+      indicator.className = 'drop-indicator';
+
+      const x = dropPosition === 'before'
+        ? targetRect.left - gridRect.left - 1
+        : targetRect.right - gridRect.left - 1;
+      const y = targetRect.top - gridRect.top + (targetRect.height / 2) - 22;
+
+      indicator.style.left = x + 'px';
+      indicator.style.top = y + 'px';
+
+      grid.appendChild(indicator);
     }
 
-    function onDragLeave(event) {
-      event.target.closest('.preset-btn[data-id]')?.classList.remove('drag-over');
-    }
-
-    async function onDrop(event, targetId) {
-      event.preventDefault();
-      if (dragSrcId === targetId) return;
-
-      document.querySelectorAll('.preset-btn[data-id]').forEach(el => {
-        el.classList.remove('dragging', 'drag-over');
-        el.setAttribute('draggable', 'false');
-      });
-      isDragging = false;
-
-      // 현재 커스텀 프리셋 순서 재정렬
-      const res = await fetch('/api/preset/' + currentUser);
-      const presets = await res.json();
-      const customPresets = presets.filter(p => !p.id.startsWith('default-'));
-      const ids = customPresets.map(p => p.id);
-
-      const srcIdx = ids.indexOf(dragSrcId);
-      const tgtIdx = ids.indexOf(targetId);
-      ids.splice(srcIdx, 1);
-      ids.splice(tgtIdx, 0, dragSrcId);
-
-      await fetch('/api/preset/' + currentUser + '/reorder', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(ids)
-      });
-
-      await loadPresets();
+    // handlePresetClick 삭제하고 copyPreset에 토스트만 남기기
+    function copyPreset(text) {
+      navigator.clipboard.writeText(text);
+      document.getElementById('inputText').value = text;
+      showToast();
     }
 
     function closePresetModal() {

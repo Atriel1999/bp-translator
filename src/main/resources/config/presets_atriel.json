@@ -1,1 +1,91 @@
-[{"id":"default-01","label":"요로시쿠","text":"よろしくおねがいします"},{"id":"default-02","label":"수고했어요","text":"お疲れ様でした"},{"id":"default-03","label":"스미마셍","text":"すみません"},{"id":"default-04","label":"아리가또","text":"ありがとうございます"},{"id":"default-05","label":"아레?","text":"あれ"},{"id":"default-06","label":"파티감사해요","text":"パーティーありがと"},{"id":"default-07","label":"잘부탁(꾸밈)","text":"ﾖﾛｼｸﾟ+｡(o･ω-人)･.｡ｵﾈｶﾞｲｼﾏｽ"},{"id":"default-08","label":"오k","text":"おk"},{"id":"default-09","label":"돌파","text":"凸"},{"id":"default-10","label":"디스럽트","text":"ディスラプト"},{"id":"default-11","label":"티나","text":"ティナ"},{"id":"default-12","label":"아루나","text":"アルーナ"},{"label":"카나미아 권유","text":"カナミアM20やろうと思ってるんですが、参加しますか？..もうクリアしてるかわからなくて、とりあえず聞いてみました","id":"ef5e2f13-73ee-4938-80eb-1d1f2cbbf6cd"}]
+[
+  {
+    "id": "default-01",
+    "label": "요로시쿠",
+    "text": "よろしくおねがいします"
+  },
+  {
+    "id": "default-02",
+    "label": "수고했어요",
+    "text": "お疲れ様でした"
+  },
+  {
+    "id": "default-03",
+    "label": "스미마셍",
+    "text": "すみません"
+  },
+  {
+    "id": "default-04",
+    "label": "아리가또",
+    "text": "ありがとうございます"
+  },
+  {
+    "id": "default-05",
+    "label": "아레?",
+    "text": "あれ"
+  },
+  {
+    "id": "default-06",
+    "label": "파티감사해요",
+    "text": "パーティーありがと"
+  },
+  {
+    "id": "default-07",
+    "label": "잘부탁(꾸밈)",
+    "text": "ﾖﾛｼｸﾟ+｡(o･ω-人)･.｡ｵﾈｶﾞｲｼﾏｽ"
+  },
+  {
+    "id": "default-08",
+    "label": "오k",
+    "text": "おk"
+  },
+  {
+    "id": "default-09",
+    "label": "돌파",
+    "text": "凸"
+  },
+  {
+    "id": "default-10",
+    "label": "디스럽트",
+    "text": "ディスラプト"
+  },
+  {
+    "id": "default-11",
+    "label": "티나",
+    "text": "ティナ"
+  },
+  {
+    "id": "default-12",
+    "label": "아루나",
+    "text": "アルーナ"
+  },
+  {"id":"preset-01","label":"빛삼키는감옥","text":"光亡 M5 @T1"},
+  {"id":"preset-02","label":"소리없는도시","text":"都 M5 周回 ＠T"},
+  {"id":"preset-03","label":"쇠락심연","text":"深淵 M5 ＠TD"},
+  {"id":"preset-04","label":"바위뱀","text":"蛇 M5 ＠TD"},
+  {"id":"preset-05","label":"황령제단","text":"祭壇 M5 ＠TD"},
+  {"id":"preset-06","label":"시디문","text":"遺跡"},
+  {"id":"preset-07","label":"끝","text":"〆"},
+  {"id":"preset-08","label":"우키시마","text":"浮島"},
+  {"id":"preset-09","label":"꿈강도","text":"強度"},
+  {"id":"preset-10","label":"주회","text":"周回"},
+  {"id":"preset-11","label":"요로시쿠(꾸벅)","text":"よろしくお願いします(o*。_。)oペコッ"},
+  {"id":"preset-12","label":"곤방와","text":"こんばんは"},
+  {"id":"preset-13","label":"이쿠요오오오오","text":"いくよおおおお"},
+  {"id":"preset-14","label":"출발할께요!","text":"行きますよ！"},
+  {"id":"preset-15","label":"아레?","text":"あれ"},
+  {"id":"preset-16","label":"잠시만요(조또마뗴)","text":"ちょっと待って"},
+  {"id":"preset-17","label":"튕겼어요","text":"落ちました"},
+  {"id":"preset-18","label":"이걸로 막판이에요","text":"これでラストです！"},
+  {"id":"preset-19","label":"나이스~","text":"ないす～"},
+  {"id":"preset-20","label":"오츠아리데시타","text":"お疲れありでした！"},
+  {"id":"preset-21","label":"아리가또고자이마시타~","text":"ありがとうございました！"},
+  {"id":"preset-22","label":"오자와","text":"おざわ"},
+  {"id":"preset-23","label":"오야스미나사이","text":"おやすみなさい"},
+  {"id":"preset-24","label":"곤방와(저녁)","text":"こんばんは"},
+  {"id":"preset-25","label":"간바레!","text":"がんばれ！"},
+  {"id":"preset-26","label":"적멸","text":"撃滅"},
+  {"id":"preset-27","label":"스핏키!","text":"ｽﾋﾟｷ"},
+  {"id":"preset-28","label":"아! 스미마셍","text":"あすみません！"},
+  {"id":"preset-29","label":"츠마나이뽀!","text":"つまないポ！"}
+]

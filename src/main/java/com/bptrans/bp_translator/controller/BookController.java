@@ -6,26 +6,25 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class BookController {
 
-	private static final String BOOK_PATH = "src/main/resources/static/book_data/book.json";
+	private static final String BASE_PATH = "src/main/resources/static/book_data/";
 
-	@GetMapping("/api/book/progress")
-	public ResponseEntity<String> getProgress() throws IOException {
-		Path path = Paths.get(BOOK_PATH);
+	@GetMapping("/api/book/progress/{user}")
+	public ResponseEntity<String> getProgress(@PathVariable String user) throws IOException {
+		Path path = Paths.get(BASE_PATH + "book_" + user + ".json");
 		if (!Files.exists(path)) return ResponseEntity.ok("[]");
 		return ResponseEntity.ok(Files.readString(path));
 	}
 
-	@PostMapping("/api/book/progress")
-	public ResponseEntity<String> saveProgress(@RequestBody String body) throws IOException {
-		Path path = Paths.get(BOOK_PATH);
+	@PostMapping("/api/book/progress/{user}")
+	public ResponseEntity<String> saveProgress(
+		@PathVariable String user,
+		@RequestBody String body) throws IOException {
+		Path path = Paths.get(BASE_PATH + "book_" + user + ".json");
 		Files.createDirectories(path.getParent());
 		Files.writeString(path, body);
 		return ResponseEntity.ok("{\"ok\":true}");

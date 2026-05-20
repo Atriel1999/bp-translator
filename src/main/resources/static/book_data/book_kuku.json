@@ -1,0 +1,2321 @@
+[
+  {
+    "id": 1001,
+    "title": "Sea Lyrics Collection",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "바다의 노래 가사집",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1002,
+    "title": "Thoughts of the Long-Lived - Some Ramblings About Life",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "장수한 이의 사색집-인생에 관한 부질없는 이야기",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1003,
+    "title": "The Mission of Humans",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "인간의 사명",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1004,
+    "title": "Asterleeds Travel Guide",
+    "category": "Books & Manuals",
+    "pages": 3,
+    "ko": "아스텔리즈 여행 가이드",
+    "collected": 3,
+    "total": 3,
+    "subtitles": [
+      "Asterleeds Travel Guide (I)",
+      "Asterleeds Travel Guide (II)",
+      "Asterleeds Travel Guide (III)"
+    ],
+    "collected_subtitles": [
+      "Asterleeds Travel Guide (I)",
+      "Asterleeds Travel Guide (II)",
+      "Asterleeds Travel Guide (III)"
+    ]
+  },
+  {
+    "id": 1005,
+    "title": "Gourmet Adventures at the Port",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "항구 미식 대모험",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1010,
+    "title": "Airona's Legend: Deluxe Illustrated Edition",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "아이로나 전설 - 양장본 삽화판",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1013,
+    "title": "Atlas of Demi-Humans: Goblin Edition",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "아인족 도감 - 고블린편",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1014,
+    "title": "Trend Guide: Spring/Summer Combined",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "트렌드세터 - 봄·여름 합본",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1015,
+    "title": "Asterleeds Culinary Journey",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "아스텔리즈 미식 기행",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1025,
+    "title": "White Wolf",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "하얀 늑대",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1026,
+    "title": "Kanamia Customs Study",
+    "category": "Books & Manuals",
+    "pages": 5,
+    "ko": "카나미아 세시풍속",
+    "collected": 5,
+    "total": 5,
+    "subtitles": [
+      "Kanamia Customs Study I",
+      "Kanamia Customs Study II",
+      "Kanamia Customs Study III",
+      "Kanamia Customs Study IV",
+      "Kanamia Customs Study V"
+    ],
+    "collected_subtitles": [
+      "Kanamia Customs Study I",
+      "Kanamia Customs Study II",
+      "Kanamia Customs Study III",
+      "Kanamia Customs Study IV",
+      "Kanamia Customs Study V"
+    ]
+  },
+  {
+    "id": 1031,
+    "title": "Origin of the Mask",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "가면의 유래",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1037,
+    "title": "Survivors of the Andra",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "안드라호의 생존자들",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1038,
+    "title": "Pale Azure Lake",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "민다로 호수",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1040,
+    "title": "After the Fall",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "쓰러진 후에",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1041,
+    "title": "Mystery of Golem",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "골렘의 수수께끼",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1047,
+    "title": "Conspiracy Behind the Peace Treaty",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "평화 협정 뒤의 음모",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1048,
+    "title": "Waterlogged Record Book",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "물에 젖은 기록부",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1052,
+    "title": "The Dragon Hunter of Regnus",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "레그나스의 용 사냥꾼",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1056,
+    "title": "Heart of the Ocean Liner",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "대양 횡단 거선의 코어",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1059,
+    "title": "Sad News: I Found Ancient Treasure",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "비보: 길드에서 쫓겨나 바다에 버려진 후 고대 보물을 발견하다",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1060,
+    "title": "What to Do When You Can't Beat an Ogre?",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "오우거를 이길 수 없을 때는 어쩌지?",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1061,
+    "title": "Crab Fantasia",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "꽃게환상곡",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1062,
+    "title": "The Founding of Asterleeds",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "아스텔리즈 건설기",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1063,
+    "title": "Former Top Artisan Now Fixing Boilerst",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "전직 수석 대장장이, 지하실에서 보일러를 수리하다",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1064,
+    "title": "The Heiress's Engagement Is Actually About Me?!",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "상회 아가씨의 약혼식이 나와 관련이 있다고?!",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1066,
+    "title": "The Seagull",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "흰 갈매기",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1067,
+    "title": "How to Chat with a Cat",
+    "category": "Books & Manuals",
+    "pages": 3,
+    "ko": "고양이와 대화하는 방법",
+    "collected": 1,
+    "total": 3,
+    "subtitles": [
+      "How to Chat with a Cat I",
+      "How to Chat with a Cat II",
+      "How to Chat with a Cat III"
+    ],
+    "collected_subtitles": [
+      "How to Chat with a Cat II"
+    ]
+  },
+  {
+    "id": 1068,
+    "title": "Hidden Street Investigation",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "숨겨진 거리 조사",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1069,
+    "title": "The Fall of the Pirates",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "해적 멸망기",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1070,
+    "title": "Land of the Night",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "밤의 나라",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1071,
+    "title": "Energy Division: A Different Perspective",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "에너지 팀: 또 다른 시각",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1072,
+    "title": "Crabs: The Hideous Sea Bugs",
+    "category": "Books & Manuals",
+    "pages": 3,
+    "ko": "꽃게, 못생긴 바다 벌레",
+    "collected": 1,
+    "total": 3,
+    "subtitles": [
+      "Crabs: The Hideous Sea Bugs I",
+      "Crabs: The Hideous Sea Bugs II",
+      "Crabs: The Hideous Sea Bugs III"
+    ],
+    "collected_subtitles": [
+      "Crabs: The Hideous Sea Bugs I"
+    ]
+  },
+  {
+    "id": 1081,
+    "title": "Radiant Stone Enthusiast Guide - Standard Weapons Edition",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "광휘석 애호가 가이드 - 제식 무기편",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1083,
+    "title": "Get-Rich-Quick in Asterleeds",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "아스텔리즈 일확천금 계획",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1087,
+    "title": "Taste Revolution: Sewer Cuisine Unveiled",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "미각 혁명: 하수도 미식 탐구",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1092,
+    "title": "The Unlucky Pirate",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "불운의 해적",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1093,
+    "title": "Tales of the Probes",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "탐지기 이야기",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1094,
+    "title": "The Iron Mask Incident",
+    "category": "Books & Manuals",
+    "pages": 4,
+    "ko": "철가면 인간 습격 사건",
+    "collected": 1,
+    "total": 4,
+    "subtitles": [
+      "The Iron Mask Incident I",
+      "The Iron Mask Incident II",
+      "The Iron Mask Incident III",
+      "The Iron Mask Incident IV"
+    ],
+    "collected_subtitles": [
+      "The Iron Mask Incident I"
+    ]
+  },
+  {
+    "id": 1095,
+    "title": "Hypotheses on the Formation of Submarine Voids",
+    "category": "Books & Manuals",
+    "pages": 2,
+    "ko": "해저 동굴 형성 가설",
+    "collected": 0,
+    "total": 2,
+    "subtitles": [
+      "Hypotheses on the Formation of Submarine Voids I",
+      "Hypotheses on the Formation of Submarine Voids II"
+    ],
+    "collected_subtitles": []
+  },
+  {
+    "id": 1098,
+    "title": "Asterleeds, Land of Freedom",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "아스텔리즈, 자유의 나라",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1100,
+    "title": "Dominate the Dance Floor in Half an Hour",
+    "category": "Books & Manuals",
+    "pages": 2,
+    "ko": "30분 만에 댄스 플로어 정복하기",
+    "collected": 2,
+    "total": 2,
+    "subtitles": [
+      "Ladies",
+      "Gentlemen"
+    ],
+    "collected_subtitles": [
+      "Ladies",
+      "Gentlemen"
+    ]
+  },
+  {
+    "id": 1103,
+    "title": "Stay or Go: The Byrnhalds",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "장로들의 사고방식",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1105,
+    "title": "Don't Blow Up the Machine! A Guide to Crafting",
+    "category": "Books & Manuals",
+    "pages": 7,
+    "ko": "로봇을 터뜨리지 마라! 신입 대장장이 가이드",
+    "collected": 7,
+    "total": 7,
+    "subtitles": [
+      "Legacy Artisan",
+      "Architectural Artisan",
+      "Engine Artisan",
+      "Forging Artisan",
+      "Artisan Levels",
+      "Where Did the Bapharian Legacy Come From?",
+      "Energy Division"
+    ],
+    "collected_subtitles": [
+      "Legacy Artisan",
+      "Architectural Artisan",
+      "Engine Artisan",
+      "Forging Artisan",
+      "Artisan Levels",
+      "Where Did the Bapharian Legacy Come From?",
+      "Energy Division"
+    ]
+  },
+  {
+    "id": 1106,
+    "title": "Open Day for Artisan",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "대장장이들의 오픈데이",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1108,
+    "title": "The Hidden Value of Dragonlight Core",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "드래곤 라이트 코어의 또 다른 가치",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1109,
+    "title": "The Hermit",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "은둔자",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1110,
+    "title": "Let's Talk About Fantasy",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "이매진에 대한 이야기",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1112,
+    "title": "Technology Advances with Every Discovery",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "과학 연구는 발굴과 함께 발전한다",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1113,
+    "title": "Don't Touch That! It Might Go Crazy!",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "만지지 마세요! 폭주합니다!",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1118,
+    "title": "Specialty Drinks of the Continent of Regnus",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "레그나스 대륙 특제 음료",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1123,
+    "title": "The Merchant Guild's Hidden Dealings",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "상회의 은밀한 내막",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1127,
+    "title": "A Civilization Built on Ruins",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "유적 위에 세워진 문명",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1130,
+    "title": "The Webber Family",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "웨버 가문",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1134,
+    "title": "Poems of the Starfall Night",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "별이 내리는 밤의 시집",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1141,
+    "title": "The Shifting Sands of Kanamia",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "모래처럼 흘러간 카나미아의 세월",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1143,
+    "title": "The Way Elders Think",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "장생목의 비밀",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1144,
+    "title": "Tribal Oral Traditions: Elder Pine Mushroom's Teachings",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "부락 구전・할미 나무 버섯의 교훈",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1145,
+    "title": "The Secret of the Longevity Tree",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "장생목의 비밀",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1148,
+    "title": "Celebration of the Fiery Moon Omens",
+    "category": "Books & Manuals",
+    "pages": 2,
+    "ko": "사계절 축제",
+    "collected": 2,
+    "total": 2,
+    "subtitles": [
+      "Celebration of the Fiery Moon Omens - Volume I",
+      "Celebration of the Fiery Moon Omens - Volume II"
+    ],
+    "collected_subtitles": [
+      "Celebration of the Fiery Moon Omens - Volume I",
+      "Celebration of the Fiery Moon Omens - Volume II"
+    ]
+  },
+  {
+    "id": 1149,
+    "title": "A Tribe Without Currency",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "화폐 없는 부락",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1150,
+    "title": "Ritual of the Four Seasons",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "사계절 축제",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1151,
+    "title": "The Tale of Kanamia's Shrimpshrooms",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "만월의 상징",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1152,
+    "title": "Symbol of the Full Moon",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "이방인의 노래 - 카나미아 메모장",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1153,
+    "title": "When the Lunar Harp Meets the Pigskin Drum",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "카나미아 새우 버섯 이야기",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1156,
+    "title": "Song of the Outsider - Kanamia Journal",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "이방인의 노래 - 카나미아 메모장",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1157,
+    "title": "Hakrei's Five Thousand Hides",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "하클레이의 가죽 5,000장",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1161,
+    "title": "The White Wolf Mystery: An Inquiry into the Existence of Kanamia Ancestral Spirits",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "하얀 늑대의 수수께끼: 카나미아 선조의 혼은 실존하는가",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1162,
+    "title": "A Study of Totem Culture in Kanamia",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "카나미아 토템 문화 고찰",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1163,
+    "title": "Kanamia's Seven Sacred Laws",
+    "category": "Books & Manuals",
+    "pages": 7,
+    "ko": "카나미아의 일곱 율법",
+    "collected": 7,
+    "total": 7,
+    "subtitles": [
+      "The Seven Sacred Laws of Kanamia - Part I",
+      "The Seven Sacred Laws of Kanamia - Part II",
+      "The Seven Sacred Laws of Kanamia - Part III",
+      "The Seven Sacred Laws of Kanamia - Part IV",
+      "The Seven Sacred Laws of Kanamia - Part V",
+      "The Seven Sacred Laws of Kanamia - Part VI",
+      "The Seven Sacred Laws of Kanamia - Part VII"
+    ],
+    "collected_subtitles": [
+      "The Seven Sacred Laws of Kanamia - Part I",
+      "The Seven Sacred Laws of Kanamia - Part II",
+      "The Seven Sacred Laws of Kanamia - Part III",
+      "The Seven Sacred Laws of Kanamia - Part IV",
+      "The Seven Sacred Laws of Kanamia - Part V",
+      "The Seven Sacred Laws of Kanamia - Part VI",
+      "The Seven Sacred Laws of Kanamia - Part VII"
+    ]
+  },
+  {
+    "id": 1166,
+    "title": "The Kanamia White Wolf: A Hypothesis",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "카나미아 하얀 늑대 고찰: 하나의 가설",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1171,
+    "title": "The Light of the Priest's Journey",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "사제의 길을 밝히는 빛",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1172,
+    "title": "The Scavengers",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "고물상들",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1173,
+    "title": "A Letter to the Chief Priest",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "대신관에게 보내는 편지",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1174,
+    "title": "The Scavengers' Guide to 'Pointless' Survival",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "고물상들의 '무의미한' 생존 법칙",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1176,
+    "title": "On the Benefits of Trading with Scavengers",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "고물상과 거래하는 묘미에 대하여",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1178,
+    "title": "Peacegrass of a Foreign Land",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "이방의 평화초",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1179,
+    "title": "Tales of the Sislesa Mine",
+    "category": "Books & Manuals",
+    "pages": 3,
+    "ko": "시슬레사 광산 괴담",
+    "collected": 2,
+    "total": 3,
+    "subtitles": [
+      "The Mine Tunnel That Appears at Night",
+      "The Singing Ghost Girl",
+      "Mine Survival Handbook"
+    ],
+    "collected_subtitles": [
+      "The Mine Tunnel That Appears at Night",
+      "The Singing Ghost Girl"
+    ]
+  },
+  {
+    "id": 1181,
+    "title": "The Bahamar Obelisk",
+    "category": "Books & Manuals",
+    "pages": 5,
+    "ko": "바하마르의 오벨리스크",
+    "collected": 3,
+    "total": 5,
+    "subtitles": [
+      "The Bahamar Obelisk Prologue",
+      "The Bahamar Obelisk I",
+      "The Bahamar Obelisk II",
+      "The Bahamar Obelisk III",
+      "The Bahamar Obelisk IV"
+    ],
+    "collected_subtitles": [
+      "The Bahamar Obelisk Prologue",
+      "The Bahamar Obelisk I",
+      "The Bahamar Obelisk III"
+    ]
+  },
+  {
+    "id": 1183,
+    "title": "Bahamar Calamity Archives",
+    "category": "Books & Manuals",
+    "pages": 4,
+    "ko": "바하마르 고원 재해 서류",
+    "collected": 2,
+    "total": 4,
+    "subtitles": [
+      "Volume I: The Highland Calamity and the Ancient Seal",
+      "Volume II: The Witch's Hatred Unveiled",
+      "Volume III: Lingering Shadows and Warnings"
+    ],
+    "collected_subtitles": [
+      "Volume I: The Highland Calamity and the Ancient Seal",
+      "Volume II: The Witch's Hatred Unveiled"
+    ]
+  },
+  {
+    "id": 1185,
+    "title": "New Ideas for Post-Plague Intervention Based on Shared Dreams",
+    "category": "Books & Manuals",
+    "pages": 4,
+    "ko": "꿈 공유를 통한 환상 재해 사후 개입의 새로운 접근",
+    "collected": 2,
+    "total": 4,
+    "subtitles": [
+      "New Approaches to Post-Plague Intervention I",
+      "New Approaches to Post-Plague Intervention II",
+      "New Approaches to Post-Plague Intervention IV"
+    ],
+    "collected_subtitles": [
+      "New Approaches to Post-Plague Intervention I",
+      "New Approaches to Post-Plague Intervention II"
+    ]
+  },
+  {
+    "id": 1189,
+    "title": "Visions Born of the Heart",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "마음 깊은 곳에서 비롯된 환상",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1193,
+    "title": "Echoes Beneath the Earth",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "지하 메아리",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1195,
+    "title": "Veteran Miners' Field Guide",
+    "category": "Books & Manuals",
+    "pages": 3,
+    "ko": "늙은 광부들의 실용 노트",
+    "collected": 0,
+    "total": 3,
+    "subtitles": [
+      "Silent Operation Techniques",
+      "Isolation Gate Handling Guide",
+      "Vein Processing Techniques"
+    ],
+    "collected_subtitles": []
+  },
+  {
+    "id": 1219,
+    "title": "The Rift",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "균열",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1220,
+    "title": "Sleepwhisper",
+    "category": "Books & Manuals",
+    "pages": 1,
+    "ko": "잠언",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1006,
+    "title": "Street Speech Collection",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "가두연설문 모음집",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1008,
+    "title": "Bapharian Legacy Expense Receipt No. 30.472",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "제30,472차 버페리아 유산 연구비 영수증",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1009,
+    "title": "Annual Quest Report",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "모험가 연간 퀘스트 완료율 통계 보고서",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1012,
+    "title": "Diary of Anger",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "분노로 가득 찬 일기",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1016,
+    "title": "Today's To-Do List",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "데일리 퀘스트",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1017,
+    "title": "A Stack of Love Letters",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "연애편지 1묶음",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1018,
+    "title": "Unfinished Letter",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "르네와 아마도의 눈덩이 쿠키 레시피",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1019,
+    "title": "Snowball Cookie Recipe by René and Amado",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "엄마에게서 온 편지",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1020,
+    "title": "Letter from Mom",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "누나에게서 온 편지",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1021,
+    "title": "Letter from Sister",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "엄마에게 보내는 답장 초안",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1022,
+    "title": "Draft of a Reply to Mom",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "안나에게 보내는 답장 초안",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1023,
+    "title": "Draft of a Reply to Anna",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "맹약의 순간",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1027,
+    "title": "Time of Forming an Alliance",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "자바의 편지",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1028,
+    "title": "Jabba's Letters",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "하얀 늑대가 떠날 때",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1029,
+    "title": "White Wolf's Departure",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "밀밭에 뭔가 숨어있다!",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1032,
+    "title": "Something's Hiding in the Wheat Field!",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "의원 경선 후보 조사",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1033,
+    "title": "Election Campaign Investigation",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "민스터혼 여행 가이드(3차 개정판)",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1034,
+    "title": "Minsterhorn Travel Guide (Draft 3)",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "카나미아족 반대파",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1035,
+    "title": "Kanamia Resistance",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "민스터혼, 슬픔의 땅",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1036,
+    "title": "Minsterhorn: Land of Sorrows",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "오랜 친구 루미아에게 보내는 편지",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1039,
+    "title": "Patrol Duty Log",
+    "category": "Letters & Records",
+    "pages": 2,
+    "ko": "순찰대 근무 기록",
+    "collected": 2,
+    "total": 2,
+    "subtitles": [
+      "Patrol Record, Page 1",
+      "Patrol Record, Page 2"
+    ],
+    "collected_subtitles": [
+      "Patrol Record, Page 1",
+      "Patrol Record, Page 2"
+    ]
+  },
+  {
+    "id": 1042,
+    "title": "An Investigation into Hero's Herb",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "영웅초에 대한 조사",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1043,
+    "title": "Lost Letters",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "잃어버린 편지",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1044,
+    "title": "Maintenance Record",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "하트가 그려진 편지",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1045,
+    "title": "The Letter with a Heart Drawing",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "야생 용 목격 보고서",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1049,
+    "title": "Wild Dragon Witness Report",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "야생 용 목격 보고서",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1050,
+    "title": "Hartson's Letter to Home",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "하트슨의 가신",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1054,
+    "title": "Diary of the Nameless One",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "무명인의 일기",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1055,
+    "title": "Elders of Kanamia",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "카나미아의 장로들",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1057,
+    "title": "Paper Covered in Slime",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "점액으로 뒤덮인 종이 조각",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1078,
+    "title": "Medical Certificate",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "'진단서'",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1084,
+    "title": "Candy Wrapper Chronicles",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "사탕 포장지 기록",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1089,
+    "title": "Sewage-Stained Letter",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "오수에 얼룩진 편지",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1091,
+    "title": "Webber Energy Network Operation Log",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "웨버 에너지 네트워크 조작 기록",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1096,
+    "title": "Mystery of the Missing Byrnhald Envoy",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "번하르트의 사자 실종 의혹",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1097,
+    "title": "Shoemaker's Heir Returns After 30 Years Missing",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "30년간 실종된 구두장이 집안의 자손이 마침내 고향으로 돌아오다",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1102,
+    "title": "Hidden Homework",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "몰래 숨겨둔 숙제",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1104,
+    "title": "Shield Generator Blueprint",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "실드 생성 장치 구조",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1114,
+    "title": "Ocean Hill Immersive Theater: 127s",
+    "category": "Letters & Records",
+    "pages": 2,
+    "ko": "오션 힐 몰입형 극장: 127초의 명작",
+    "collected": 1,
+    "total": 2,
+    "subtitles": [
+      "Ocean Hill Immersive Theater: 127s of Legend\" Part I",
+      "Ocean Hill Immersive Theater: 127s of Legend\" Part II"
+    ],
+    "collected_subtitles": [
+      "\"Ocean Hill Immersive Theater: 127s of Legend\" Part I"
+    ]
+  },
+  {
+    "id": 1122,
+    "title": "Proposal: Add Artist & Sewer-dweller Representative Seats",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "아티스트와 하수도 주민 대표석 추가 설치 요청",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1129,
+    "title": "To the Honorable Jon Dandelion",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "존・단델리온 각하님께",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1131,
+    "title": "Tina's File",
+    "category": "Letters & Records",
+    "pages": 2,
+    "ko": "티나의 서류",
+    "collected": 2,
+    "total": 2,
+    "subtitles": [
+      "Tina's File - I",
+      "Tina's File - II"
+    ],
+    "collected_subtitles": [
+      "Tina's File - I",
+      "Tina's File - II"
+    ]
+  },
+  {
+    "id": 1136,
+    "title": "Dark Mist Legion Investigation Record",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "서프라이즈 카드 게임 규칙",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1138,
+    "title": "Rules of the Surprise Card Game",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "주둔 일지 남은 페이지",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1139,
+    "title": "Fragment of Garrison Log",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "제발 저를 돌려보내 주세요!",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1154,
+    "title": "Please Send Me Back!",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "루카에게 보내는 편지",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1155,
+    "title": "A Letter to Luca",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "오랜 친구 루미아에게 보내는 편지",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1158,
+    "title": "Book of Counsel: New Moon Scroll",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "간언서・삭월권",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1159,
+    "title": "Book of Counsel: Sacred Spirit Scroll",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "간언서・성령권",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1160,
+    "title": "Book of Sin: The Transgressors",
+    "category": "Letters & Records",
+    "pages": 4,
+    "ko": "죄의 기록・일탈자",
+    "collected": 4,
+    "total": 4,
+    "subtitles": [
+      "Book of Sin: The Transgressors I",
+      "Book of Sin: The Transgressors II",
+      "Book of Sin: The Transgressors III",
+      "Book of Sin: The Transgressors IV"
+    ],
+    "collected_subtitles": [
+      "Book of Sin: The Transgressors I",
+      "Book of Sin: The Transgressors II",
+      "Book of Sin: The Transgressors III",
+      "Book of Sin: The Transgressors IV"
+    ]
+  },
+  {
+    "id": 1165,
+    "title": "Waters of the Forbidden Land",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "금지된 땅의 물",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1167,
+    "title": "A Letter to Old Friend Lumia",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "색 바랜 가죽 두루마리",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1168,
+    "title": "Aged Hide Scroll",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "유실된 가죽 두루마리",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1169,
+    "title": "Lost Hide Scroll",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "기이한 나무껍질 부식 조각",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1170,
+    "title": "Strange Bark Inscription",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "윌프 님에게",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1186,
+    "title": "Letter to Mr. Wilp",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "마르셀에게 보내는 편지",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1191,
+    "title": "Letter to Marcel",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "구겨진 쪽지",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1192,
+    "title": "Crumpled Note",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "분실된 병사의 고향 편지",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1196,
+    "title": "Lost Soldier's Letter Home",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "발레리아에게 보내는 편지",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1198,
+    "title": "Letter to Valeria",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "어느 날, 언니에게서 온 답장",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1215,
+    "title": "A Reply Sent to Sister (Undated)",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "어느 날, 언니에게 보낸 답장",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1216,
+    "title": "A Reply to Mother (Undated)",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "어느 날, 어머니에게 보낸 답장",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1217,
+    "title": "A Draft Sent by Mistake",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "무작정 발송된 초안",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1218,
+    "title": "A Letter from Sister (Undated)",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "어느 날, 언니에게서 온 답장",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1221,
+    "title": "A Merchant's Complaints",
+    "category": "Letters & Records",
+    "pages": 1,
+    "ko": "어느 상인의 푸념",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1222,
+    "title": "Lost Painting Notes",
+    "category": "Letters & Records",
+    "pages": 6,
+    "ko": "유실된 그림 노트",
+    "collected": 0,
+    "total": 6,
+    "subtitles": [
+      "Lost Painting Notes I",
+      "Lost Painting Notes II",
+      "Lost Painting Notes III",
+      "Lost Painting Notes IV",
+      "Lost Painting Notes V",
+      "Finished Painting"
+    ],
+    "collected_subtitles": []
+  },
+  {
+    "id": 1024,
+    "title": "Tricky Problem",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "까다로운 문제",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1065,
+    "title": "A Call to All Citizens",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "안드라 상륙전 격전지를 찾은 모든 방문객에게",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1073,
+    "title": "The Crime and Redemption Beneath the Street Lamp Performance Poster",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "가로등 아래의 죄와 구원 공연 포스터",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1074,
+    "title": "Laugh! Drink! Party All Night! Performance Poster",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "웃고! 마시고! 밤새 즐겨라! 공연 포스터",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1075,
+    "title": "The Nobles of Byrnhald Performance Poster",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "번하르트 귀족 공연 포스터",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1076,
+    "title": "A Night with Kleisler Performance Poster",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "클레이슬러의 밤 공연 포스터",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1077,
+    "title": "The Puppet with Enamel Eyes Performance Poster",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "에나멜 눈동자의 목각 인형 공연 포스터",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1079,
+    "title": "Shocking! Eerie Sounds from Below!",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "충격! 지하에서 들려오는 기괴한 소리!",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1086,
+    "title": "Lerom's Ultimate Dignity Package - Death Over Dishonor",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "르롬의 궁극 존엄 세트 - 살보다 죽음이 더 귀하다",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1090,
+    "title": "Duel in the Steel Cage",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "철장 감옥 아레나 결투",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1099,
+    "title": "Jenny's Mysterious Strength",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "제니의 신비한 힘",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1101,
+    "title": "Awaken! Mighty Fitter!",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "각성하라! 집게사!",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1111,
+    "title": "7th Artisan Expo: Introduction",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "제7회 대장장이 박람회 선도편",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1115,
+    "title": "The Miser Performance Poster",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "자린고비 공연 포스터",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1116,
+    "title": "Spring-Leg Jack Performance Poster",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "스프링 다리 잭 공연 포스터",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1117,
+    "title": "Webber Energy Network Hazard: The Sewer Crisis",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "웨버 에너지 네트워크 위험 요소: 하수도 위기",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1119,
+    "title": "A One-Day Tour of Asterleeds",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "아스텔리즈 일일 투어",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1120,
+    "title": "Ocean Hill Museum: New Exhibit Season",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "오션 힐 박물관 새 전시 시즌",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1121,
+    "title": "Your Personalized Stress Management Plan",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "당신만의 스트레스 맞춤 관리 방안",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1124,
+    "title": "Wanted: Dr. Flame-Eye",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "수배령: 플레임아이 박사",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1125,
+    "title": "Wanted: Lady Penelope",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "수배령: 페넬로프 부인",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1126,
+    "title": "Wanted: Iron-Lung Jayden",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "수배령: 강철 폐 잭",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1128,
+    "title": "Plains Hunting Regulations and Poaching Warning",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "평원 사냥 관리 규정 및 밀렵 위험 안내",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1132,
+    "title": "Opening Ceremony Program List",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "개막식 프로그램 목록",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1133,
+    "title": "Exclusive Menu for Seabreeze Festival",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "해풍절 한정 메뉴",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1135,
+    "title": "Shrimp Daily",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "샤샤 데일리",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1137,
+    "title": "Cruise Activity Schedule",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "유람선 이벤트 시간표",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1142,
+    "title": "Person missing! The Mushroom Elder Trali appears!",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "긴급 수색! 나무 버섯 장로 출현!",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1146,
+    "title": "Mounted Grand Hunt!",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "라이드 사냥 대회!",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1147,
+    "title": "Kanamia Caprahorn Race",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "카나미아 뿔엄소 대회",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1164,
+    "title": "Artisan Guild Frontier Market",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "대장장이 길드 선행 판매",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1175,
+    "title": "The Flyer for the Spinning Rudder",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "스피닝 러더 홍보 전단",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1177,
+    "title": "To all visitors to the ruins of Andra Landing Battle",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "안드라 상륙전 유적 방문객에게",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1182,
+    "title": "Wanted: Geronimo the Hammersmith",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "수배령: 망치 대장장이 헤로니모",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1184,
+    "title": "Pilgrimage to Bahamar",
+    "category": "Notices & Posters",
+    "pages": 5,
+    "ko": "바하마르 고원 순례 투어",
+    "collected": 5,
+    "total": 5,
+    "subtitles": [
+      "Tour Guide I",
+      "Tour Guide II",
+      "Tour Guide III",
+      "Route Guide",
+      "Ismark"
+    ],
+    "collected_subtitles": [
+      "Tour Guide I",
+      "Tour Guide II",
+      "Tour Guide III",
+      "Route Guide",
+      "Ismark"
+    ]
+  },
+  {
+    "id": 1187,
+    "title": "Wanted: Nael the Illusionist",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "수배령: 환상술사 네일",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1188,
+    "title": "Wanted: Darya the Starsoul Flask Thief",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "수배령: 성혼병 괴도 다야",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1194,
+    "title": "Shocking! Captain Reiner's New Boots Stolen by a Mine Rat!",
+    "category": "Notices & Posters",
+    "pages": 1,
+    "ko": "충격! 라이너 대장의 새 장화가 광산 쥐에게 물려 갔다!",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1007,
+    "title": "When in Doubt, Test It Out!",
+    "category": "Other Readables",
+    "pages": 1,
+    "ko": "의문이 든다면 한번 시험해 보세요!",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1011,
+    "title": "Mind-Blowing Little Thoughts",
+    "category": "Other Readables",
+    "pages": 10,
+    "ko": "마음 깊이 울리는 생각",
+    "collected": 2,
+    "total": 6,
+    "subtitles": [
+      "Super Mind-Blowing Little Thoughts, Article 7",
+      "Super Mind-Blowing Little Thoughts, Article 9",
+      "Super Mind-Blowing Little Thoughts, Article 22",
+      "Super Mind-Blowing Little Thoughts, Article 23",
+      "Super Mind-Blowing Little Thoughts, Article 29",
+      "Super Mind-Blowing Little Thoughts, Article 76"
+    ],
+    "collected_subtitles": [
+      "Super Mind-Blowing Little Thoughts, Article 9",
+      "Super Mind-Blowing Little Thoughts, Article 23"
+    ]
+  },
+  {
+    "id": 1030,
+    "title": "Oh, Chieftain",
+    "category": "Other Readables",
+    "pages": 1,
+    "ko": "족장님, 족장님",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1046,
+    "title": "Facing the Enemy",
+    "category": "Other Readables",
+    "pages": 1,
+    "ko": "적은 이쪽에 있다",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1051,
+    "title": "Procurement List",
+    "category": "Other Readables",
+    "pages": 1,
+    "ko": "구매 목록",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1058,
+    "title": "Twilight Secrets Diamond Appraisal Certificate",
+    "category": "Other Readables",
+    "pages": 1,
+    "ko": "「황혼의 비밀」 다이아몬드 감정서",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1080,
+    "title": "Burnt IOU Note",
+    "category": "Other Readables",
+    "pages": 1,
+    "ko": "그을린 흔적이 있는 채무 목록",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1082,
+    "title": "Universal Combat Potion (Type III)",
+    "category": "Other Readables",
+    "pages": 1,
+    "ko": "만능 격투약 (3)형",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1085,
+    "title": "Water-Resistant Map Lost by Someone",
+    "category": "Other Readables",
+    "pages": 1,
+    "ko": "누군가가 흘린 방수 지도",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1088,
+    "title": "Rusty Nails in the Bone",
+    "category": "Other Readables",
+    "pages": 1,
+    "ko": "뼛속까지 박힌 녹슨 못, 죽기 전까지 멈추지 않는다!",
+    "collected": 0,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1107,
+    "title": "Experimental Model Application",
+    "category": "Other Readables",
+    "pages": 1,
+    "ko": "대장장이 길드 실험 모델 신청서",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1140,
+    "title": "Mind-Blowing Thoughts",
+    "category": "Other Readables",
+    "pages": 6,
+    "ko": "마음 깊이 울리는 소소한 생각",
+    "collected": 7,
+    "total": 10,
+    "subtitles": [
+      "Mind-Blowing Thoughts, No. 77",
+      "Mind-Blowing Thoughts, No. 79",
+      "Mind-Blowing Thoughts, No. 81",
+      "Mind-Blowing Thoughts, No. 86",
+      "Mind-Blowing Thoughts, No. 89",
+      "Mind-Blowing Thoughts, No. 90",
+      "Mind-Blowing Thoughts No. 93",
+      "Mind-Blowing Thoughts No. 94",
+      "Mind-Blowing Thoughts No. 95",
+      "Mind-Blowing Thoughts No. 115"
+    ],
+    "collected_subtitles": [
+      "Mind-Blowing Thoughts, No. 77",
+      "Mind-Blowing Thoughts, No. 79",
+      "Mind-Blowing Thoughts, No. 81",
+      "Mind-Blowing Thoughts, No. 86",
+      "Mind-Blowing Thoughts, No. 90",
+      "Mind-Blowing Thoughts No. 93",
+      "Mind-Blowing Thoughts No. 94"
+    ]
+  },
+  {
+    "id": 1180,
+    "title": "The Art of Absolute Tongue",
+    "category": "Other Readables",
+    "pages": 5,
+    "ko": "궁극 완전 완벽 언어 예술",
+    "collected": 2,
+    "total": 5,
+    "subtitles": [
+      "The Art of Absolute Tongue I",
+      "The Art of Absolute Tongue III",
+      "The Art of Absolute Tongue V",
+      "The Art of Absolute Tongue VII",
+      "The Art of Absolute Tongue IX"
+    ],
+    "collected_subtitles": [
+      "The Art of Absolute Tongue V",
+      "The Art of Absolute Tongue IX"
+    ]
+  },
+  {
+    "id": 1190,
+    "title": "The One True Theory of Everything",
+    "category": "Other Readables",
+    "pages": 3,
+    "ko": "모든 것에 대한 유일한 정답",
+    "collected": 1,
+    "total": 3,
+    "subtitles": [
+      "The One True Theory of Everything XII",
+      "The One True Theory of Everything XXXVI",
+      "The One True Theory of Everything XLVIII"
+    ],
+    "collected_subtitles": [
+      "The One True Theory of Everything XLVIII"
+    ]
+  },
+  {
+    "id": 1197,
+    "title": "Torn Diary Pages",
+    "category": "Other Readables",
+    "pages": 1,
+    "ko": "찢어진 일기장",
+    "collected": 1,
+    "total": 1,
+    "subtitles": []
+  },
+  {
+    "id": 1223,
+    "title": "Renewal Light Riddle",
+    "category": "Other Readables",
+    "pages": 10,
+    "ko": "새해의 빛 수수께끼",
+    "collected": 10,
+    "total": 10,
+    "subtitles": [
+      "Renewal Light Riddle I",
+      "Renewal Light Riddle II",
+      "Renewal Light Riddle III",
+      "Renewal Light Riddle IV",
+      "Renewal Light Riddle V",
+      "Renewal Light Riddle VI",
+      "Renewal Light Riddle VII",
+      "Renewal Light Riddle VIII",
+      "Renewal Light Riddle IX",
+      "Renewal Light Riddle X"
+    ],
+    "collected_subtitles": [
+      "Renewal Light Riddle I",
+      "Renewal Light Riddle II",
+      "Renewal Light Riddle III",
+      "Renewal Light Riddle IV",
+      "Renewal Light Riddle V",
+      "Renewal Light Riddle VI",
+      "Renewal Light Riddle VII",
+      "Renewal Light Riddle VIII",
+      "Renewal Light Riddle IX",
+      "Renewal Light Riddle X"
+    ]
+  }
+]

@@ -108,12 +108,91 @@
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-track { background: #12121e; }
         ::-webkit-scrollbar-thumb { background: #3a3a6e; border-radius: 2px; }
+
+        /* 탭 버튼 */
+        .tab-switch { display: flex; gap: 4px; margin-right: 8px; }
+        .tab-btn { background: #2a2a4e; border: 1px solid #3a3a6e; color: #aaa; padding: 6px 16px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: bold; }
+        .tab-btn:hover { background: #3a3a6e; color: #fff; }
+        .tab-btn.active { background: #4a90d9; color: #fff; border-color: #4a90d9; }
+
+        /* Book 탭 패널 */
+        .panel-book { display: none; flex: 1; flex-direction: column; overflow: hidden; padding: 16px; gap: 12px; }
+        .panel-book.active { display: flex; }
+
+        /* 검색바 */
+        .book-search-wrap { position: relative; max-width: 480px; }
+        .book-search-wrap input { width: 100%; background: #1e1e32; color: #e0e0e0; border: 1px solid #3a3a6e; border-radius: 8px; padding: 10px 14px; font-size: 14px; outline: none; }
+        .book-search-wrap input:focus { border-color: #4a90d9; }
+        .search-dropdown { position: absolute; top: calc(100% + 4px); left: 0; right: 0; background: #1a1a2e; border: 1px solid #3a3a6e; border-radius: 8px; max-height: 240px; overflow-y: auto; z-index: 50; display: none; }
+        .search-dropdown.open { display: block; }
+        .search-item { padding: 8px 14px; cursor: pointer; font-size: 13px; border-bottom: 1px solid #2a2a4e; }
+        .search-item:last-child { border-bottom: none; }
+        .search-item:hover { background: #252540; }
+        .search-item .s-ko { color: #e0e0e0; }
+        .search-item .s-en { color: #666; font-size: 11px; margin-top: 2px; }
+        .search-item .s-cat { color: #4a90d9; font-size: 10px; }
+        .search-highlight { color: #4a90d9; font-weight: bold; }
+
+        /* 필터 바 */
+        .book-filter { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+        .filter-btn { background: #2a2a4e; border: 1px solid #3a3a6e; color: #aaa; padding: 5px 12px; border-radius: 20px; cursor: pointer; font-size: 12px; }
+        .filter-btn:hover { border-color: #4a90d9; color: #fff; }
+        .filter-btn.active { background: #4a90d9; color: #fff; border-color: #4a90d9; }
+        .filter-sep { color: #3a3a6e; }
+        .filter-collected { background: #2a2a4e; border: 1px solid #3a3a6e; color: #aaa; padding: 5px 12px; border-radius: 20px; cursor: pointer; font-size: 12px; }
+        .filter-collected:hover { border-color: #e0a800; color: #fff; }
+        .filter-collected.active { background: #e0a800; color: #12121e; border-color: #e0a800; font-weight: bold; }
+
+        /* 책 그리드 */
+        .book-grid { flex: 1; overflow-y: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 8px; align-content: start; }
+        .book-card { background: #1e1e32; border: 1px solid #2a2a4e; border-radius: 8px; padding: 10px 12px; cursor: pointer; transition: border-color 0.15s; display: flex; flex-direction: column; gap: 4px; }
+        .book-card:hover { border-color: #4a90d9; }
+        .book-card.done { border-color: #2a5a2a; background: #1a2a1a; }
+        .book-card.done:hover { border-color: #4CAF50; }
+        .book-card.partial { border-color: #5a4a1a; background: #2a2510; }
+        .book-card.partial:hover { border-color: #e0a800; }
+        .book-card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+        .book-ko { font-size: 13px; font-weight: bold; color: #e0e0e0; line-height: 1.4; flex: 1; }
+        .book-en { font-size: 11px; color: #666; line-height: 1.3; }
+        .book-card-bottom { display: flex; justify-content: space-between; align-items: center; }
+        .book-cat { font-size: 10px; color: #4a90d9; }
+        .book-progress { font-size: 12px; font-weight: bold; }
+        .book-progress.done { color: #4CAF50; }
+        .book-progress.partial { color: #e0a800; }
+        .book-progress.none { color: #555; }
+        .book-check { width: 20px; height: 20px; border-radius: 50%; border: 2px solid #3a3a6e; display: flex; align-items: center; justify-content: center; font-size: 11px; flex-shrink: 0; }
+        .book-check.done { background: #4CAF50; border-color: #4CAF50; color: #fff; }
+        .book-check.partial { background: #e0a800; border-color: #e0a800; color: #12121e; }
+        .book-check.none { background: transparent; }
+
+        /* 통계 바 */
+        .book-stats { font-size: 12px; color: #666; display: flex; gap: 16px; }
+        .book-stats span { color: #aaa; }
+        .book-stats .stat-done { color: #4CAF50; }
+        .book-stats .stat-partial { color: #e0a800; }
+
+        /* 소제목 체크리스트 */
+        .book-card.has-subtitles { cursor: default; }
+        .book-card.has-subtitles:hover { border-color: #2a2a4e; }
+        .book-card.has-subtitles.done:hover { border-color: #2a5a2a; }
+        .book-card.has-subtitles.partial:hover { border-color: #5a4a1a; }
+        .book-subtitles { display: flex; flex-direction: column; gap: 2px; margin-top: 8px; padding-top: 8px; border-top: 1px solid #2a2a4e; }
+        .subtitle-item { display: flex; align-items: center; gap: 7px; cursor: pointer; padding: 3px 4px; border-radius: 4px; }
+        .subtitle-item:hover { background: rgba(255,255,255,0.05); }
+        .subtitle-check { width: 14px; height: 14px; border-radius: 3px; border: 1.5px solid #3a3a6e; display: flex; align-items: center; justify-content: center; font-size: 9px; flex-shrink: 0; }
+        .subtitle-check.done { background: #4CAF50; border-color: #4CAF50; color: #fff; }
+        .subtitle-label { font-size: 11px; color: #999; line-height: 1.3; }
+        .subtitle-item.done .subtitle-label { color: #4CAF50; text-decoration: line-through; opacity: 0.7; }
     </style>
 </head>
 <body>
 
 <div class="header">
     <h1>⚔️ BP 번역기</h1>
+    <div class="tab-switch">
+        <button class="tab-btn active" id="tab-translator" onclick="switchTab('translator')">📝 번역기</button>
+        <button class="tab-btn" id="tab-book" onclick="switchTab('book')">📚 Book</button>
+    </div>
     <div class="user-switch">
         <button class="user-btn active" id="btn-Atriel" onclick="switchUser('Atriel')">Atriel</button>
         <button class="user-btn" id="btn-kuku" onclick="switchUser('kuku')">kuku</button>
@@ -151,6 +230,28 @@
         <div class="preset-grid" id="presetGrid"></div>
     </div>
 
+</div>
+
+<!-- Book 탭 패널 -->
+<div class="panel-book" id="panel-book">
+    <div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+        <div class="book-search-wrap">
+            <input type="text" id="bookSearch" placeholder="책 이름 검색 (한국어 or 영어)..." oninput="onBookSearch(this.value)" onblur="setTimeout(()=>closeDropdown(),150)">
+            <div class="search-dropdown" id="searchDropdown"></div>
+        </div>
+        <div class="book-stats" id="bookStats"></div>
+        <button class="btn-setting" onclick="downloadProgress()" style="flex-shrink:0">⬇️ 진행현황 저장</button>
+    </div>
+    <div class="book-filter" id="bookFilter">
+        <button class="filter-btn active" onclick="setFilter('all', this)">전체</button>
+        <button class="filter-btn" onclick="setFilter('Books & Manuals', this)">📖 Books</button>
+        <button class="filter-btn" onclick="setFilter('Letters & Records', this)">✉️ Letters</button>
+        <button class="filter-btn" onclick="setFilter('Notices & Posters', this)">📄 Notices</button>
+        <button class="filter-btn" onclick="setFilter('Other Readables', this)">📜 Other</button>
+        <span class="filter-sep">|</span>
+        <button class="filter-collected active" id="filterCollected" onclick="toggleCollectedFilter(this)">🔲 미수집만 보기</button>
+    </div>
+    <div class="book-grid" id="bookGrid"></div>
 </div>
 
 <!-- 설정 모달 -->
@@ -224,7 +325,201 @@
       clearAll();
     }
 
-    // 초기화
+    // ===================== 탭 전환 =====================
+    function switchTab(tab) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('tab-' + tab).classList.add('active');
+      document.querySelector('.main').style.display = tab === 'translator' ? 'flex' : 'none';
+      document.getElementById('panel-book').classList.toggle('active', tab === 'book');
+      if (tab === 'book' && !bookLoaded) initBook();
+    }
+
+    // ===================== Book 탭 =====================
+    let bookData = [];
+    let bookLoaded = false;
+    let currentCatFilter = 'all';
+    let showOnlyUncollected = false;
+
+    async function initBook() {
+      try {
+        const res = await fetch('/api/book/progress');
+        bookData = await res.json();
+        bookLoaded = true;
+        renderBookGrid();
+        renderBookStats();
+      } catch(e) {
+        document.getElementById('bookGrid').innerHTML = '<div style="color:#ff6b6b;padding:20px">book.json 로드 실패: ' + e.message + '</div>';
+      }
+    }
+
+    function renderBookStats() {
+      const total = bookData.length;
+      const done = bookData.filter(b => b.collected > 0 && b.collected >= b.total).length;
+      const partial = bookData.filter(b => b.collected > 0 && b.collected < b.total).length;
+      const none = bookData.filter(b => !b.collected || b.collected === 0).length;
+      document.getElementById('bookStats').innerHTML = `
+        총 <span>${total}</span>개 &nbsp;
+        <span class="stat-done">완료 ${done}</span> &nbsp;
+        <span class="stat-partial">진행중 ${partial}</span> &nbsp;
+        미수집 <span>${none}</span>
+      `;
+    }
+
+    function setFilter(cat, btn) {
+      currentCatFilter = cat;
+      document.querySelectorAll('.book-filter .filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderBookGrid();
+    }
+
+    function toggleCollectedFilter(btn) {
+      showOnlyUncollected = !showOnlyUncollected;
+      btn.classList.toggle('active', showOnlyUncollected);
+      btn.textContent = showOnlyUncollected ? '🔲 미수집만 보기' : '🔲 미수집만 보기';
+      renderBookGrid();
+    }
+
+    function renderBookGrid(filtered) {
+      const grid = document.getElementById('bookGrid');
+      let list = filtered || bookData;
+      if (currentCatFilter !== 'all') list = list.filter(b => b.category === currentCatFilter);
+      if (showOnlyUncollected) list = list.filter(b => !b.collected || b.collected === 0);
+      if (!list.length) { grid.innerHTML = '<div style="color:#555;padding:20px">항목 없음</div>'; return; }
+
+      grid.innerHTML = list.map(b => {
+        const hasSubs = b.subtitles && b.subtitles.length > 0;
+        const collectedSubs = b.collected_subtitles || [];
+        const isDone = hasSubs
+          ? collectedSubs.length >= b.subtitles.length
+          : b.collected >= b.total;
+        const isPartial = hasSubs
+          ? collectedSubs.length > 0 && collectedSubs.length < b.subtitles.length
+          : b.collected > 0 && b.collected < b.total;
+        const cardClass = (isDone ? 'done' : isPartial ? 'partial' : '') + (hasSubs ? ' has-subtitles' : '');
+        const progClass = isDone ? 'done' : isPartial ? 'partial' : 'none';
+        const catLabel = {'Books & Manuals':'📖 Books','Letters & Records':'✉️ Letters','Notices & Posters':'📄 Notices','Other Readables':'📜 Other'}[b.category] || b.category;
+        const collectedCount = hasSubs ? collectedSubs.length : b.collected;
+        const totalCount = hasSubs ? b.subtitles.length : b.total;
+
+        // 체크 아이콘 (subtitles 없는 책만 카드 우상단에 표시)
+        const checkHtml = !hasSubs ? `<div class="book-check ${isDone ? 'done' : 'none'}">${isDone ? '✓' : ''}</div>` : '';
+        const clickHandler = !hasSubs ? `onclick="toggleBookCollected(${b.id})"` : '';
+
+        // 소제목 리스트
+        const subsHtml = hasSubs ? `
+          <div class="book-subtitles">
+            ${b.subtitles.map(s => {
+              const checked = collectedSubs.includes(s);
+              return `<div class="subtitle-item ${checked ? 'done' : ''}" onclick="toggleSubtitle(${b.id}, '${escHtml(s).replace(/'/g, "\\'")}')">
+                <div class="subtitle-check ${checked ? 'done' : ''}">✓</div>
+                <span class="subtitle-label">${escHtml(s)}</span>
+              </div>`;
+            }).join('')}
+          </div>` : '';
+
+        return `<div class="book-card ${cardClass}" ${clickHandler}>
+          <div class="book-card-top">
+            <div>
+              <div class="book-ko">${escHtml(b.ko || b.title)}</div>
+              <div class="book-en">${escHtml(b.title)}</div>
+            </div>
+            ${checkHtml}
+          </div>
+          <div class="book-card-bottom">
+            <span class="book-cat">${catLabel}</span>
+            <span class="book-progress ${progClass}">${collectedCount}/${totalCount}</span>
+          </div>
+          ${subsHtml}
+        </div>`;
+      }).join('');
+    }
+
+    function toggleBookCollected(id) {
+      const book = bookData.find(b => b.id === id);
+      if (!book) return;
+      book.collected = book.collected >= book.total ? 0 : book.total;
+      saveBookProgress();
+      renderBookGrid();
+      renderBookStats();
+    }
+
+    function toggleSubtitle(id, subtitle) {
+      const book = bookData.find(b => b.id === id);
+      if (!book) return;
+      if (!book.collected_subtitles) book.collected_subtitles = [];
+      const idx = book.collected_subtitles.indexOf(subtitle);
+      if (idx >= 0) book.collected_subtitles.splice(idx, 1);
+      else book.collected_subtitles.push(subtitle);
+      book.collected = book.collected_subtitles.length;
+      saveBookProgress();
+      renderBookGrid();
+      renderBookStats();
+    }
+
+    async function saveBookProgress() {
+      try {
+        await fetch('/api/book/progress', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(bookData)
+        });
+      } catch(e) { console.error('저장 실패:', e); }
+    }
+
+    function downloadProgress() {
+      const blob = new Blob([JSON.stringify(bookData, null, 2)], {type: 'application/json'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'book.json';
+      a.click();
+    }
+
+    // 검색 자동완성
+    function onBookSearch(val) {
+      if (!bookLoaded) return;
+      const q = val.trim().toLowerCase();
+      const dd = document.getElementById('searchDropdown');
+      if (!q) { dd.classList.remove('open'); renderBookGrid(); return; }
+
+      const results = bookData.filter(b =>
+        (b.ko && b.ko.toLowerCase().includes(q)) ||
+        b.title.toLowerCase().includes(q)
+      ).slice(0, 20);
+
+      if (!results.length) { dd.classList.remove('open'); renderBookGrid([]); return; }
+
+      dd.innerHTML = results.map(b => {
+        const koHL = b.ko ? highlight(b.ko, q) : '';
+        const enHL = highlight(b.title, q);
+        const catLabel = {'Books & Manuals':'📖','Letters & Records':'✉️','Notices & Posters':'📄','Other Readables':'📜'}[b.category] || '';
+        return `<div class="search-item" onmousedown="selectSearchItem(${b.id})">
+          <div class="s-ko">${koHL || enHL}</div>
+          <div class="s-en">${koHL ? enHL : ''} <span class="s-cat">${catLabel}</span></div>
+        </div>`;
+      }).join('');
+      dd.classList.add('open');
+      renderBookGrid(results);
+    }
+
+    function highlight(str, q) {
+      const idx = str.toLowerCase().indexOf(q);
+      if (idx === -1) return escHtml(str);
+      return escHtml(str.slice(0, idx)) + '<span class="search-highlight">' + escHtml(str.slice(idx, idx + q.length)) + '</span>' + escHtml(str.slice(idx + q.length));
+    }
+
+    function selectSearchItem(id) {
+      const book = bookData.find(b => b.id === id);
+      if (!book) return;
+      document.getElementById('bookSearch').value = book.ko || book.title;
+      closeDropdown();
+      renderBookGrid([book]);
+    }
+
+    function closeDropdown() {
+      document.getElementById('searchDropdown').classList.remove('open');
+    }
+
+    // ===================== 기존 init =====================
     async function init() {
       renderHistory();
       await loadPresets();

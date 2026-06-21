@@ -50,7 +50,7 @@ public class TranslatorService {
 	public String translate(String text) {
 		RestClient restClient = RestClient.create();
 		Map<String, Object> requestBody = Map.of(
-			"model", "claude-sonnet-4-20250514",
+			"model", "claude-sonnet-4-6",
 			"max_tokens", 1024,
 			"system", systemPrompt,
 			"messages", List.of(Map.of("role", "user", "content", text))
